@@ -1,0 +1,160 @@
+*{margin: 0;padding: 0;}
+
+body{position: relative;display: table;}
+
+li{list-style: none;}
+a {outline: none;}
+
+ul.caseremark {width: 100%;display: table;}
+ul.caseremark li{width: 100%;float: left;}
+ul.caseremark li.logo{width: 100%;text-align: center;}
+ul.caseremark li.logo img{max-width: 18%;max-height: 100px; display: inline-block;margin-top: 70px;}
+ul.caseremark li.nameinfo{margin-top: 80px;}
+ul.caseremark li.nameinfo p{font-size: 18px;color: #ffffff;line-height: 26px;padding: 0 12%;text-align: justify;}
+ul.caseremark li.line{margin-top: 20px;}
+ul.caseremark li.line span{display: block;width: 20%; height: 3px;background-color: #fff;margin-left: 12%;}
+ul.caseremark li.remark{margin-top: 20px;margin-bottom: 70px;}
+ul.caseremark li.remark p{font-size: 15px;color: #ffffff;line-height: 25px;padding: 0 12%;text-align: justify;}
+
+
+ul.casedetail{width: 100%; display: table;}
+ul.casedetail li{float: left;width: 100%;}
+ul.casedetail li.text{margin-top: 70px;}
+ul.casedetail li.text p{font-size: 16px;color: #333333;line-height: 30px;padding: 0 12%;text-align: justify;}
+ul.casedetail li.linkweb{margin-top: 30px;margin-bottom: 70px;}
+ul.casedetail li.linkweb a{display:inline-block;padding: 8px 25px;margin-left: 12%;background-color: #e15212;font-size: 18px;color: #FFFFFF;outline: none;text-decoration: none;}
+
+
+ul.caseimg{width: 100%;display: table;}
+ul.caseimg li{width: 100%;float: left;}
+ul.caseimg li > img{display: block;width: 100%;}
+
+
+
+
+ul.morecase{width: 100%;display: block;}
+ul.morecase li{width: 100%;float: left;}
+ul.morecase li.morecasebtn{text-align: center;margin-top: 30px;margin-bottom: 40px;}
+ul.morecase li.morecasebtn a{display: inline-block;padding: 8px 35px;border: solid 3px #e15212;font-size: 18px;color: #e15212;text-decoration: none;}
+ul.morecase li.morecaselist{width: 100%; background-position: center top;background-repeat: no-repeat;background-size: 100% auto;}
+ul.morecase li.morecaselist a{display: inline-block;width: 100%; float: left;text-decoration: none;}
+
+ul.morecase li.morecaselist a p{color: #FFFFFF;text-align: justify;padding: 0 12%;opacity: 1;}
+
+ul.morecase li.morecaselist a p.nameinfo{margin-top: 60px;font-size: 16px;}
+ul.morecase li.morecaselist a span.line{display: block;width: 20%; height: 3px;background-color: #fff;margin-left: 12%;margin-top:20px;}
+ul.morecase li.morecaselist a p.remark{margin-top: 20px;font-size: 17px;margin-bottom: 60px;line-height: 30px;}
+
+ul.casefooter{width: 100%;display: table;background-color: #161616;padding-bottom: 80px;}
+ul.casefooter li{float: left;width: 100%;}
+ul.casefooter li.cooperation span{display: inline-block;height: 30px;margin-left: 12%;color: #ffffff;margin-top: 50px;font-size: 18px;line-height: 30px;}
+ul.casefooter li.cooperation a{display: inline-block;height: 30px;color: #ffffff;margin-top: 50px;font-size: 18px;text-decoration: none;margin-left: 10px;border-bottom: solid 3px #FFFFFF;line-height: 30px;}
+
+
+ul.casefooter li.title{margin-top: 50px;}
+
+ul.casefooter li.title p{color: #8b8b8b;padding-left: 12%;font-size: 18px;line-height: 30px;}
+ul.casefooter li.footline{margin-top: 15px; height: 3px;}
+ul.casefooter li.footline span{display: block;width: 12%;height: 100%;background-color: #8b8b8b;margin-left: 12%;padding: 0; }
+ul.casefooter li.service{width: 76%;margin-left: 12%;margin-top: 15px;}
+ul.casefooter li.service a{display: block;float: left; height: 30px;line-height: 30px;text-decoration: none;color: #8b8b8b;font-size: 16px;margin-top: 10px;}
+ul.casefooter li.service a:nth-child(2n+1){width: 55%;}
+ul.casefooter li.service a:nth-child(2n){width: 45%;}
+ul.casefooter li.contact{width: 76%;margin-left: 12%;margin-top: 15px;}
+
+ul.casefooter li.contact a{display: block;width: 100%;float: left;background-position: left 5px;background-repeat: no-repeat;background-size: 20px;margin-top: 15px;text-decoration: none;}
+ul.casefooter li.contact a p{padding-left: 30px;color: #8b8b8b;font-size: 16px;line-height: 30px;}
+
+
+ul.casefooter li.contact a.address{background-image: url(../img/addressico.png);}
+ul.casefooter li.contact a.tel{background-image: url(../img/telico.png);}
+ul.casefooter li.contact a.email{background-image: url(../img/emailico.png);}
+
+
+
+
+
+.menu{width: 45px; height: 45px;position: fixed;right: 20px; top: 90px;z-index: 999999;}
+
+.menu li{width: 45px; height: 45px;border-radius: 50%;background: rgba(0,0,0,0.6);position: absolute;left: 0;top: 0;opacity: 0;overflow: hidden;}
+
+.menu li.default{left: 0;top: 0;opacity: 1;z-index: 9999999;}
+.menu li img{width: 23px;display:block;margin: 11px;}
+
+.menu li a{display: block;float: left; width: 100%; height: 100%;-webkit-tap-highlight-color:transparent;}
+
+.menu li.default img{margin: 0;position: absolute;}
+.menu li.default img.defaultimg{width: 23px;height: 23px;opacity: 1;left: 11px;top: 11px;
+opacity: 1;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-o-transition: all 0.3s;
+-ms-transition: all 0.3s;
+transition-delay: 0.3s;
+-moz-transition-delay: 0.3s; /* Firefox 4 */
+-webkit-transition-delay: 0.3s;; /* Safari 和 Chrome */
+-o-transition-delay: 0.3s;;
+
+}
+.menu li.default img.closeimg{width: 1px;height: 1px;opacity: 0;left: 22px;top: 22px;
+
+-webkit-transition: all 0.3s;
+-moz-transition:all 0.3s;
+-o-transition: all 0.3s;
+-ms-transition: all 0.3s;
+
+
+}
+
+
+.menu.active li.default img.defaultimg{width: 1px;height: 1px;opacity: 0;left: 22px;top: 22px;
+
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-o-transition: all 0.3s;
+-ms-transition: all 0.3s;
+
+
+}
+.menu.active li.default img.closeimg{width: 23px;height: 23px;opacity: 1;left: 11px;top: 11px;
+-webkit-transform: rotateZ(180deg);
+-moz-transform: rotateZ(180deg);
+-o-transform: rotateZ(180deg);
+-ms-transform: rotateZ(180deg);
+transform: rotateZ(180deg);
+
+
+-webkit-transition: all 0.3s;
+-moz-transition:all 0.3s;
+-o-transition: all 0.3s;
+-ms-transition: all 0.3s;
+
+
+}
+.menu li.menubtn{
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+-moz-transition:all 0.3s;
+-o-transition: all 0.3s;
+-ms-transition: all 0.3s;
+}
+
+
+
+.menu.active li.menubtn{opacity: 1;
+-webkit-transition: all 0.3s;
+-moz-transition:all 0.3s;
+-o-transition: all 0.3s;
+-ms-transition: all 0.3s;
+
+
+
+}
+
+
+
+.menu.active li.menuindex{right: 0; top:-75px;}
+.menu.active li.menuservice{left: -53px; top:-52px;}
+.menu.active li.menucase{left: -75px; top:0px;}
+.menu.active li.menucontact{left: -53px; top:52px;}
+.menu.active li.menutop{right: 0; top:75px;}
